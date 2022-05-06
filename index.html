@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypter</title>
+
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--BOX ICONS LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+    <!-- LOGO -->
+    <header>
+        <img id="main-logo" src="resources/img/Logo.png" alt="logo alura">
+    </header>
+
+    <!-- INPUT AND BUTTONS -->
+    <section id="main-box">
+        <div id="input">
+            <input id="input-box" oninput="this.value = this.value.replace(/[^a-z]/,' ')" type="text" pattern="[a-z]" placeholder="Ingrese el texto aqui">
+        </div>
+
+        <h6 id="advice-msg"><i id="ad-icon" class='bx bxs-error-circle' ></i> Solo letras minúsculas y sin acentos</h6>
+
+        <div id="btn-box">
+            
+            <button class="btn" id="enc-btn">Encriptar</button>
+            <button class="btn" id="desc-btn">Desencriptar</button>
+        </div>
+    </section>
+    
+    <!-- ENCRYPTED TEXT BOX -->
+    <div id="encrypted-box">
+        <div id="error-box">
+        <img id="img-error-msg" src="resources/img/Muñeco.png">
+        <h2 class="encrypted-error-txt">Ningún mensaje fue encontrado</h2>
+        <p class="encrypted-error-txt">Ingresa el texto que desees encriptar o desencriptar.</p>
+        
+        </div>
+
+        <div id="encrypted-txt">
+            <textarea id="encrypted-final-txt" readonly>
+            </textarea>
+
+            <button class="btn" id="copy-btn"> Copiar </button>
+        </div>
+    </div>
+    
+    <!--================= SCRIPTS =================-->
+    <script src="script.js"></script>
+</body>
+<!--================== FOOTER =============-->
+<footer>
+    <h6>Made by Jared Martinez 2022</h6>
+</footer>
+</html>

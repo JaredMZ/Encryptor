@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&display=swap');
+
+:root {
+  
+ 
+    /*---------- COLORS VAR -----------*/
+ --dark-blue-100: #609ED4;
+ --dark-blue-200: #356EA9;
+ --dark-blue-300: #0A3871;
+ --dark-blue-400: #072B61;
+ --dark-blue-500: #052051;
+
+ --gray-100: #CED4DA;
+ --gray-200: #ADB5BD;
+ --gray-300: #868E96;
+ --gray-400: #495057;
+ --gray-500: #343440;
+
+ --light-blue-100: #F3F5FC;
+ --light-blue-200: #EFF1FA;
+ --light-blue-300: #E9ECF8;
+ --light-blue-400: #AAB2D5;
+ --light-blue-500: #757FB2;
+ 
+
+}
+
+body {
+    background-color: var(--light-blue-100);
+    width: 1340px;
+    height: 500px;
+    top: 622px;
+    left: -2277px;
+    font-family: 'Kanit', sans-serif;
+}
+
+#main-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+#input-box{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 150%;
+    border: none;
+    background-color: var(--light-blue-100);
+    font-family: 'Kanit', sans-serif;
+}
+
+#input-box::placeholder {
+    color: var(--dark-blue-300);
+    font-family: 'Kanit', sans-serif;
+}
+
+#input-box:focus {
+    outline: none;
+}
+
+#advice-msg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 245px;
+    top: 480px;
+    color: var(--gray-400);
+    font-family: 'Kanit', sans-serif;
+}
+
+#ad-icon {
+    color: var(--gray-400);
+    padding-right: 3px;
+}
+
+#btn-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 680px;
+    height: 65px;
+    left: 240px;
+    top: 540px;
+}
+
+.btn {
+    padding: 20px;
+    width: 320px;
+    height: 55px;
+    border-radius: 24px;
+    color: white;
+    background-color: var(--dark-blue-300);
+    border: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+#enc-btn:hover{
+    background-color: var(--dark-blue-500);
+}
+
+
+
+#desc-btn {
+    margin-left: 10px;
+    background-color: #D8DFE8;
+    color: var(--dark-blue-300);
+}
+
+#desc-btn:hover {
+background-color: var(--light-blue-400);
+}
+
+/*----------------- ENCRYPT BOX ----------------------*/
+
+#encrypted-box {
+    font-family: 'Kanit', sans-serif;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 575px;
+    left: 1000px;
+    top: 40px;
+    position: absolute;
+    border-radius: 32px;
+    text-align: center;
+    box-shadow: 6px 5px 20px 6px rgba(0, 0, 0, 0.08);
+    
+}
+
+#img-error-msg {
+    padding-top: 35px;
+    width: 250px;
+    
+}
+
+#encrypted-txt {
+    display: none;
+    margin-left: 50px;
+    width: 200px;
+    text-align: start;
+    font-size: 24px;
+    color: var(--gray-500);
+}
+
+#encrypted-final-txt {
+    height: 450px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    border-style: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.6rem;
+    color: var(--gray-400);
+    resize: none;
+    
+}
+
+#encrypted-final-txt:focus{
+    outline: none;
+}
+
+#copy-btn {
+    margin-top: 30px;
+    width: 200px;
+    background-color: white;
+    color: var(--dark-blue-300);
+    border: 1px solid;
+}
+
+#copy-btn:hover {
+    background-color: var(--light-blue-500);
+    color: white;
+}
+
+footer {
+    position: fixed;
+    left: 50px;
+    bottom: -20px;
+}
